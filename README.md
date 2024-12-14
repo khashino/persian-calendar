@@ -2,6 +2,8 @@
 
 A Cinnamon desklet for Linux Mint that displays a Persian (Jalali) calendar with current date highlighting, month navigation, and RTL support.
 
+تقویم فارسی برای لینوکس مینت 
+
 ## Features
 
 - Displays the current Persian calendar month.
