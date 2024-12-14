@@ -1,0 +1,98 @@
+.calendar-container {
+    padding: 10px;
+    background-color: #1E1E1E;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Ensure text is center aligned even in RTL */
+    text-align: center;
+}
+
+.calendar-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #8f8de0;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: "DejaVu Sans Mono", monospace;
+    /* The title will also be centered horizontally and vertically by default */
+}
+
+/* A row of cells (weekdays or days) */
+.calendar-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+/* Make header and day cells the same size */
+.calendar-header-cell,
+.calendar-cell {
+    width: 50px;    /* Adjust as needed */
+    height: 31px;   /* Adjust as needed */
+    background-color: #222222;
+    border-radius: 8px;
+    margin: 1px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+/* Empty cells have no background */
+.calendar-cell-empty {
+    background-color: transparent;
+}
+
+/* Weekday header label styles */
+.calendar-header-label {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 10px;
+    font-family: "DejaVu Sans Mono", monospace;
+    text-align: center;
+    margin-top: 8px; /* No vertical margins */
+}
+
+/* Day label styles */
+.calendar-day-label {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: "DejaVu Sans Mono", monospace;
+    text-align: center;
+    margin-top: 8px;
+}
+
+/* Highlight today's cell */
+.calendar-cell-today {
+    background-color:#29278c !important;
+    color: #000000 !important;
+    font-weight: bold;
+}
+
+/* Force RTL on all text containers if needed */
+.calendar-container, 
+.calendar-row, 
+.calendar-header-cell, 
+.calendar-cell {
+    direction: rtl;
+}
+.calendar-arrow {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: "DejaVu Sans Mono", monospace;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #333333;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+.calendar-arrow:hover {
+    background-color: #444444;
+}
